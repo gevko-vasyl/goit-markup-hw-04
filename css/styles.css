@@ -126,6 +126,7 @@ h6 {
   display: flex;
   margin-left: auto;
   font-style: normal;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -136,6 +137,11 @@ h6 {
   color: #757575;
 }
 
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .head-link:hover,
 .head-link:focus {
   color: var(--accent-color);
@@ -144,10 +150,19 @@ h6 {
 /*Hero*/
 
 .hero-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: #2f303a;
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 }
 
 .hero-text {
@@ -186,6 +201,18 @@ h6 {
 
 .item + .item {
   margin-left: 30px;
+}
+
+.advantages-icon {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.advantages-bg {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
 }
 
 .advantages-title {
